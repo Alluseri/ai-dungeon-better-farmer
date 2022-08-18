@@ -2,7 +2,7 @@
 A new, better & safe advertisement farmer & bypass for AI Dungeon.
 
 ## What's new?
-I added Safe Mode, so you can be completely sure you won't get banned(exceptions apply: see [Disclaimer](#disclaimer)) within that.
+I added Safe Mode, so you can be completely sure you won't get banned(exceptions apply: see [Disclaimer](#disclaimer)).
 
 I also *slightly* improved the interface.
 
@@ -10,6 +10,9 @@ I also *slightly* improved the interface.
 You will not get banned unless the developers silently update the API and I don't manage to place a warning and update the script in time, OR if you decide to use unsafe mode. Keep that in mind.
 
 As a counter fact, I use this on main in unsafe mode with all restrictions lifted and still not banned.
+
+## Support
+YouTube comments & Reddit comments are a very unreliable way of receiving support, using GitHub Issues is suggested instead.
 
 ## Usage
 Check out the [showcase](https://youtu.be/Jr_UAZQ-mqQ) for an all-in-1 guide.
@@ -35,4 +38,4 @@ Supported values: `true`/`yes`/`enable`/`enabled` & `false`/`no`/`disable`/`disa
 - Waiting for your suggestions
 
 ## What happens if this script gets fixed?
-I don't know. I'll place a warning for you not to use the script, but the future of it is unknown. I might consider reworking it if I feel like it, and if it would even be possible.
+I don't know. I'll place a warning for you not to use the script, but the future of it is unknown. I might consider reworking it if I feel like it.
