@@ -30,5 +30,6 @@ Supported values: `true`/`yes`/`enable`/`enabled` & `false`/`no`/`disable`/`disa
 
 ## (Hopefully) Upcoming features
 - Node.js support and Monitor Mode
-- Reverse engineer the mobile application and add a safe action limit bypass.
-- Waiting for your suggestions.
+- Reverse engineer the mobile application and add a safe action limit bypass
+- TamperMonkey userscript
+- Waiting for your suggestion
