@@ -32,4 +32,7 @@ Supported values: `true`/`yes`/`enable`/`enabled` & `false`/`no`/`disable`/`disa
 - Node.js support and Monitor Mode
 - Reverse engineer the mobile application and add a safe action limit bypass
 - TamperMonkey userscript
-- Waiting for your suggestion
+- Waiting for your suggestions
+
+## What happens if this script gets fixed?
+I don't know. I'll place a warning for you not to use the script, but the future of it is unknown. I might consider reworking it if I feel like it, and if it would even be possible.
