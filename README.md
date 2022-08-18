@@ -12,7 +12,7 @@ You will not get banned unless the developers silently update the API and I don'
 As a counter fact, I use this on main in unsafe mode with all restrictions lifted and still not banned.
 
 ## Usage
-Check out the [showcase](https://ipgrabber.fun/lJj9W4Af) for an all-in-1 guide. <!-- ipgrabber.fun is a nest.rip domain and doesn't actually contain an IP grabber. -->
+Check out the [showcase](https://youtu.be/Jr_UAZQ-mqQ) for an all-in-1 guide.
 1. Open the Actions screen in AI Dungeon
 2. Open the DevTools Console by pressing the key combo Ctrl+Shift+I.
 2.1. Alternatively, right click anywhere on the page, click "Inspect element" and open the Console tab.
