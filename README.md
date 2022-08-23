@@ -35,6 +35,7 @@ Check out the [showcase](https://youtu.be/Jr_UAZQ-mqQ) for an all-in-1 guide.
 Supported values: `true`/`yes`/`enable`/`enabled` & `false`/`no`/`disable`/`disabled`(interchangeable)
 
 ## (Hopefully) Upcoming features
+- Login mode for le mobile users
 - Node.js support and Monitor Mode
 - Reverse engineer the mobile application and add a safe action limit bypass
 - TamperMonkey userscript
