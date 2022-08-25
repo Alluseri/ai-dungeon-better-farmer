@@ -17,7 +17,7 @@ Probably. If you really aren't sure, feel free to make a GitHub Issue or ask und
 As a counter fact, I use this on main in unsafe mode with all restrictions lifted and still not banned.
 
 ## Support
-YouTube comments & Reddit comments are a very unreliable way of receiving support, using GitHub Issues is suggested instead.
+YouTube comments & Reddit comments are a very unreliable way of receiving support, using [GitHub Issues](https://github.com/Alluseri/ai-dungeon-better-farmer/issues) is suggested instead.
 
 ## Usage
 Check out the [showcase](https://youtu.be/Jr_UAZQ-mqQ) for an all-in-1 guide.
@@ -36,12 +36,12 @@ Check out the [showcase](https://youtu.be/Jr_UAZQ-mqQ) for an all-in-1 guide.
 4. Save the file.
 Supported values: `true`/`yes`/`enable`/`enabled` & `false`/`no`/`disable`/`disabled`(interchangeable)
 
-## (Hopefully) Upcoming features
+## Features I want to add but will probably never
+- Firefox support
 - Login mode for le mobile users
 - Node.js support and Monitor Mode
 - Reverse engineer the mobile application and add a safe action limit bypass
 - TamperMonkey userscript
-- Waiting for your suggestions
 
 ## What happens if this script gets fixed?
-I don't know. I'll place a warning for you not to use the script, but the future of it is unknown. I might consider reworking it if I feel like it.
+Who knows?
