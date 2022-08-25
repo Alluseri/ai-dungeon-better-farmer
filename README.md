@@ -1,6 +1,8 @@
 # Better ad farmer for AI Dungeon
 A new, better & safe advertisement farmer & bypass for AI Dungeon.
 
+STATUS: Works 25.08.2022 (US 08/25/2022)
+
 ## Disclaimer
 You will not get banned unless the developers silently update the API and I don't manage to place a warning and update the script in time, OR if you decide to use unsafe mode. Keep that in mind.
 
