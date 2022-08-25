@@ -1,23 +1,11 @@
 # Better ad farmer for AI Dungeon
-A new, better & safe advertisement farmer & bypass for AI Dungeon.
-
-STATUS: Works 25.08.2022 (US 08/25/2022)
-
-## Disclaimer
-You will not get banned unless the developers silently update the API and I don't manage to place a warning and update the script in time, OR if you decide to use unsafe mode. Keep that in mind.
-
-## What's new?
-I added Safe Mode, so you can be completely sure you won't get banned(exceptions apply: see [Disclaimer](#disclaimer)).
-
-I also *slightly* improved the interface.
+A new, better & safer advertisement farmer & bypass for AI Dungeon.
 
 ## Is it working right now?
-Probably. If you really aren't sure, feel free to make a GitHub Issue or ask under wherever you found this repository at. Google SEO is good, right?
-
-As a counter fact, I use this on main in unsafe mode with all restrictions lifted and still not banned.
+Works as of 25.08.2022 (US 08/25/2022).
 
 ## Support
-YouTube comments & Reddit comments are a very unreliable way of receiving support, using [GitHub Issues](https://github.com/Alluseri/ai-dungeon-better-farmer/issues) is suggested instead.
+Using [GitHub Issues](https://github.com/Alluseri/ai-dungeon-better-farmer/issues) is highly recommended.
 
 ## Usage
 Check out the [showcase](https://youtu.be/Jr_UAZQ-mqQ) for an all-in-1 guide.
