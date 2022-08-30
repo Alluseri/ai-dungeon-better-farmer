@@ -2,7 +2,7 @@
 A new, better & safer advertisement farmer & bypass for AI Dungeon.
 
 ## Is it working right now?
-Works as of 25.08.2022 (US 08/25/2022).
+Works as of 30.08.2022 (US 08/30/2022).
 
 ## Support
 Using [GitHub Issues](https://github.com/Alluseri/ai-dungeon-better-farmer/issues) is highly recommended.
