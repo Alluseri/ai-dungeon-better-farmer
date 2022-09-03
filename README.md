@@ -25,6 +25,7 @@ Check out the [showcase](https://youtu.be/Jr_UAZQ-mqQ) for an all-in-1 guide.
 Supported values: `true`/`yes`/`enable`/`enabled` & `false`/`no`/`disable`/`disabled`(interchangeable)
 
 ## Features I want to add but will probably never
+- Remove "Use Scales" button
 - Firefox support
 - Login mode for le mobile users
 - Node.js support and Monitor Mode
