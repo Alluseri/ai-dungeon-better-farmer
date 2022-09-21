@@ -92,7 +92,7 @@ function setupButtonText(state, fn) {
 				HTML_SubText.innerHTML = "<center>Uh oh! It seems like you reached the 30-action limit.<br>Please refresh the page now and proceed to playing.</center>";
 			} else {
 				HTML_WatchAdBtn.parentElement.parentElement.onclick = fn;
-				HTML_WatchAdBtn.innerText = "+10 ACTIONS";
+				HTML_WatchAdBtn.innerText = "+20 ACTIONS";
 				HTML_WatchAdBtn.parentElement.parentElement.style.backgroundColor = "#00c1d6";
 			}
 			return;
