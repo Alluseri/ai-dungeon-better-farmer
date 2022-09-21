@@ -22,7 +22,7 @@ var HTML_WatchAdBtn = null;
 var HTML_ActionText = null;
 var AUTHTOKEN = null;
 var lastActions = 0;
-const myver = "v1.0";
+const myver = "v1.1";
 
 async function allu_waitTime(ms) {
 	return await new Promise(function (response, reject) {
