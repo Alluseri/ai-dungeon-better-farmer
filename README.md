@@ -1,11 +1,27 @@
 # Better ad farmer for AI Dungeon
 A new, better & safer advertisement farmer & bypass for AI Dungeon.
 
-## Is it working right now?
-Works perfectly, tested on main 21.09.2022(US 09/21/2022).
+# v2
+The userscript version, much more convenient and way more stable.
 
-## Support
-Using [GitHub Issues](https://github.com/Alluseri/ai-dungeon-better-farmer/issues) is highly recommended.
+## Is it working right now?
+Worked on main 24.09.2022(US 09/24/2022).
+
+## Usage
+Check out the [showcase](https://uh.oh.not/yet) for an in-depth guide.
+1. Install TamperMonkey(GreaseMonkey NOT TESTED!).
+2. Copy the contents of either provided file suffixed `.v2`(both work equally well, but `ai-dungeon-better-farmer.v2.min.js` is smaller) into clipboard.
+3. Create a new TamperMonkey script and paste the copied contents into the script content(overwrite everything!).
+4. Ctrl+S.
+5. Enable it if required.
+6. Open any adventure play of yours(or refresh the page), you'll see 2 additional buttons on your hotbar.
+7. Click `+20 ACTIONS` or `+20 ACTIONS [FAST]` and enjoy!
+
+# v1 | NOT UPDATED
+The DevTools version, less convenient and might be fixed soon.
+
+## Is it working right now?
+Worked on main 21.09.2022(US 09/21/2022).
 
 ## Usage
 Check out the [showcase](https://youtu.be/Jr_UAZQ-mqQ) for an all-in-1 guide.
@@ -23,14 +39,3 @@ Check out the [showcase](https://youtu.be/Jr_UAZQ-mqQ) for an all-in-1 guide.
 3. Change the settings you're looking to change.
 4. Save the file.
 Supported values: `true`/`yes`/`enable`/`enabled` & `false`/`no`/`disable`/`disabled`(interchangeable)
-
-## Features I want to add but will probably never
-- Remove "Use Scales" button
-- Firefox support
-- Login mode for le mobile users
-- Node.js support and Monitor Mode
-- Reverse engineer the mobile application and add a safe action limit bypass
-- TamperMonkey userscript
-
-## What happens if this script gets fixed?
-Who knows?
