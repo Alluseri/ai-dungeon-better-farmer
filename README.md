@@ -25,13 +25,12 @@ Worked on main 21.09.2022(US 09/21/2022).
 
 ## Usage
 Check out the [showcase](https://youtu.be/Jr_UAZQ-mqQ) for an all-in-1 guide.
-1. Open the Actions screen in AI Dungeon
+1. Open the Actions screen in AI Dungeon.
 2. Open the DevTools Console by pressing the key combo Ctrl+Shift+I.
-2.1. Alternatively, right click anywhere on the page, click "Inspect element" and open the Console tab.
 3. Copy the contents of either provided file(both work equally well, but `ai-dungeon-better-farmer.min.js` is smaller) into clipboard.
 4. Paste the copied contents into the console and press Enter.
 5. You should see the contents of the page change. If they didn't, check the console for a highlighted error and make an issue.
-6. Press "Initialize Farmer"
+6. Press "Initialize Farmer".
 7. Enjoy!
 ### How do I change the settings?
 1. Download & open either provided file in any text editor of your preference. Notepad works just fine.
