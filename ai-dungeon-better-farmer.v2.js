@@ -29,6 +29,10 @@
 	}
 	const style = (x, y) => ((x.style.cssText = y.style.cssText), x);
 
+	function isPagePatched() {
+		return !!($(".aidbf--alluseri-loves-you") || $("aidbf--pgr-kurogame-net"));
+	}
+
 	function genericPayload(eventName, clientInfo) {
 		return {
 			"operationName": "EventHookSendUserEvent",
@@ -96,7 +100,7 @@
 			auxBtn.style.borderColor = auxBtn.ogBorder;
 		};
 
-		buildElement("div", { className: auxBtn.className }, x => {
+		buildElement("div", { className: auxBtn.className + " aidbf--alluseri-loves-you" }, x => {
 			x.style.cssText = auxBtn.style.cssText;
 			x.ogBg = x.style.backgroundColor = "#112244";
 			x.ogBorder = x.style.borderColor = "#223355";
@@ -109,7 +113,7 @@
 			)
 		);
 
-		buildElement("div", { className: auxBtn.className }, x => {
+		buildElement("div", { className: auxBtn.className + " aidbf--pgr-kurogame-net" }, x => {
 			x.style.cssText = auxBtn.style.cssText;
 			x.ogBg = x.style.backgroundColor = "#113355";
 			x.ogBorder = x.style.borderColor = "#224466";
@@ -124,6 +128,10 @@
 	}
 
 	function initializeChain() {
+		if (isPagePatched()) {
+			console.log("Not repatching page!");
+			return;
+		}
 		var ctr = 0;
 		var timebk = window.setTimeout;
 
