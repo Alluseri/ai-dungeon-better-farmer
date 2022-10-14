@@ -10,12 +10,16 @@ Yes, 14.10.2022
 ## Usage
 Check out the [showcase](https://check.the.url/you-are-too-early-and-i-am-too-lazy) for an in-depth guide.
 1. Install TamperMonkey(GreaseMonkey NOT TESTED!).
-2. Copy the contents of either provided file suffixed `.v2`(both work equally well, but `ai-dungeon-better-farmer.v2.min.js` is smaller) into clipboard.
+2. Copy the contents of either provided file suffixed `.v2`(both work the same, but `ai-dungeon-better-farmer.v2.min.js` is smaller) into clipboard.
 3. Create a new TamperMonkey script and paste the copied contents into the script content(overwrite everything!).
 4. Ctrl+S.
 5. Enable it if required.
-6. Open any adventure play of yours(or refresh the page), you'll see 2 additional buttons on your hotbar.
-7. Click `+20 ACTIONS` or `+20 ACTIONS [FAST]` and enjoy!
+6. Open any adventure play of yours and (IMPORTANT) refresh the page, you'll see 2 additional buttons on your hotbar.
+7. If you see that the icon at the top left isn't an arrow anymore, proceed to step 8, otherwise try refreshing again.
+8. Click `+10 ACTIONS` or `+10 ACTIONS [FAST]`(may get the counter out of sync).
+9. Your updated actions will be visible in the left menu panel.
+10. To use the newly acquired actions, you'll have to refresh the page again.
+11. Enjoy!
 
 # v1 | NOT UPDATED
 The DevTools version, less convenient and might be fixed soon.
