@@ -1,6 +1,16 @@
 # Better ad farmer for AI Dungeon
 A new, better & safer advertisement farmer & bypass for AI Dungeon.
 
+## Meta
+People might come here with the expected question of "why?", implying that ads were a good solution or something. Well, maybe. But:
+1. I can't use my web-browser to watch ads. I want to.
+2. I want to use an old build of AI Dungeon mobile app without ads. I can't(well, I do, thanks to AIDBF, doesn't matter).
+3. 10 actions per 20-30 seconds? For real?
+4. I can't use the AI Dungeon app to watch ads when I don't use a VPN, because I'm from Russia.
+
+## Precautions
+Please, for God's sake, don't get too greedy. It's highly unlikely the project will get outdated and abandoned in a matter of days, so, if you want to farm, do it passively. +300 actions per day at most. More will get you flagged and yeeted along with all your stories, so don't hold me responsible for this.
+
 # v2
 The userscript version, much more convenient and way more stable.
 
@@ -10,7 +20,7 @@ Yes, 14.10.2022
 ## Usage
 Check out the [showcase](https://check.the.url/you-are-too-early-and-i-am-too-lazy) for an in-depth guide.
 1. Install TamperMonkey(GreaseMonkey NOT TESTED!).
-2. Copy the contents of either provided file suffixed `.v2`(both work the same, but `ai-dungeon-better-farmer.v2.min.js` is smaller) into clipboard.
+2. Copy the contents of either provided file suffixed `.v2`(`ai-dungeon-better-farmer.v2.min.js` recommended) into clipboard.
 3. Create a new TamperMonkey script and paste the copied contents into the script content(overwrite everything!).
 4. Ctrl+S.
 5. Enable it if required.
