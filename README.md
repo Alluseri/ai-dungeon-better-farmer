@@ -5,10 +5,10 @@ A new, better & safer advertisement farmer & bypass for AI Dungeon.
 The userscript version, much more convenient and way more stable.
 
 ## Is it working right now?
-Worked on main 24.09.2022(US 09/24/2022).
+No.
 
 ## Usage
-Check out the [showcase](https://uh.oh.not/yet) for an in-depth guide.
+Check out the [showcase](https://check.the.url/you-are-too-early-and-i-am-too-lazy) for an in-depth guide.
 1. Install TamperMonkey(GreaseMonkey NOT TESTED!).
 2. Copy the contents of either provided file suffixed `.v2`(both work equally well, but `ai-dungeon-better-farmer.v2.min.js` is smaller) into clipboard.
 3. Create a new TamperMonkey script and paste the copied contents into the script content(overwrite everything!).
