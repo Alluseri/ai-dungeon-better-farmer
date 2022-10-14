@@ -2,7 +2,7 @@
 // @name         AI Dungeon Better Farmer
 // @namespace    https://www.youtube.com/playlist?list=PLuPCd5VIscosG72QWT03BBZriNDEbryea
 // @version      2.0
-// @description  Gets rid of the need to spend your precious time to watch ads.
+// @description  Gets rid of the need to spend your precious time to view ads.
 // @author       Alluseri
 // @match        https://play.aidungeon.io/*
 // @icon         https://cdn.discordapp.com/attachments/853155168170147910/1022980412731039855/hibi_transp.ico
@@ -29,17 +29,13 @@
 	}
 	const style = (x, y) => ((x.style.cssText = y.style.cssText), x);
 
-	function isPagePatched() {
-		return !!($(".aidbf--alluseri-loves-you") || $("aidbf--pgr-kurogame-net"));
-	}
-
 	function genericPayload(eventName, clientInfo) {
 		return {
 			"operationName": "EventHookSendUserEvent",
 			"variables": {
 				"input": {
 					"eventName": eventName,
-					"variation": "mobile",
+					"variation": "web",
 					"clientInfo": clientInfo
 				}
 			},
@@ -66,7 +62,7 @@
 
 		var cycle = async function (auxBtn, fast) {
 			var clientInfo = {
-				"os": "mobile",
+				"os": "web",
 				"model": navigator.userAgent.toLowerCase(),
 				"version": "unknown"
 			};
@@ -100,49 +96,51 @@
 			auxBtn.style.borderColor = auxBtn.ogBorder;
 		};
 
-		buildElement("div", { className: auxBtn.className + " aidbf--alluseri-loves-you" }, x => {
+		buildElement("div", { className: auxBtn.className }, x => {
 			x.style.cssText = auxBtn.style.cssText;
 			x.ogBg = x.style.backgroundColor = "#112244";
 			x.ogBorder = x.style.borderColor = "#223355";
-			x.onclick = cycle.bind(window, x, false);
+			x.onclick = cycle.bind(globalThis, x, false);
 			parent.appendChild(x);
 			return x;
 		},
 			buildElement("div", { className: auxVisuals.className }, x => style(x, auxVisuals),
-				buildElement("div", { className: auxText.className, innerText: "+20 ACTIONS" }, x => style(x, auxText))
+				buildElement("div", { className: auxText.className, innerText: "+10 ACTIONS" }, x => style(x, auxText))
 			)
 		);
 
-		buildElement("div", { className: auxBtn.className + " aidbf--pgr-kurogame-net" }, x => {
+		buildElement("div", { className: auxBtn.className }, x => {
 			x.style.cssText = auxBtn.style.cssText;
 			x.ogBg = x.style.backgroundColor = "#113355";
 			x.ogBorder = x.style.borderColor = "#224466";
-			x.onclick = cycle.bind(window, x, true);
+			x.onclick = cycle.bind(globalThis, x, true);
 			parent.appendChild(x);
 			return x;
 		},
 			buildElement("div", { className: auxVisuals.className }, x => style(x, auxVisuals),
-				buildElement("div", { className: auxText.className, innerText: "+20 ACTIONS [FAST]" }, x => style(x, auxText))
+				buildElement("div", { className: auxText.className, innerText: "+10 ACTIONS [FAST]" }, x => style(x, auxText))
 			)
 		);
 	}
 
-	function initializeChain() {
-		if (isPagePatched()) {
-			console.log("Not repatching page!");
-			return;
-		}
+	(function initalizeChain() {
 		var ctr = 0;
-		var timebk = window.setTimeout;
+		var timebk = globalThis.setTimeout;
 
-		window.setTimeout = function (a) {
-			var e = $('[aria-label="Commands list"]');
-			if (!e) return timebk.apply(window, arguments);
-			routineAdventurePlay(e);
-			window.setTimeout = timebk;
-			return timebk.apply(window, arguments);
+		globalThis.setTimeout = function (a, b) {
+			if (!document.location.href.includes("/main/adventurePlay"))
+				return (globalThis.setTimeout = timebk)(a, b);
+			if (a.toString().match(/function\(\){return \w+\(!0\)}/))
+				console.log("[AIDBF] Capture: " + (++ctr));
+			if (ctr >= 3) {
+				var e = $('[aria-label="Commands list"]');
+				if (!e) return timebk(a, b);
+				routineAdventurePlay(e);
+				globalThis.setTimeout = timebk;
+			}
+			return timebk(a, b);
 		};
-	}
+	})();
 
 	(function initializeIntercept() {
 		var sendbk = window.WebSocket.prototype.send;
@@ -155,24 +153,4 @@
 			return sendbk.apply(this, arguments);
 		};
 	})();
-
-	var oldHref = document.location.href;
-
-	window.onload = function() {
-		if (document.location.href.includes("/main/adventurePlay"))
-			initializeChain();
-
-		(new MutationObserver(function(mutations) {
-			mutations.forEach(function(mutation) {
-				if (oldHref != document.location.href) {
-					oldHref = document.location.href;
-					if (document.location.href.includes("/main/adventurePlay"))
-						initializeChain();
-				}
-			});
-		})).observe(document.querySelector("body"), {
-			childList: true,
-			subtree: true
-		});
-	};
 })();
