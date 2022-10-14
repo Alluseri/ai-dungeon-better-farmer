@@ -5,7 +5,7 @@ A new, better & safer advertisement farmer & bypass for AI Dungeon.
 The userscript version, much more convenient and way more stable.
 
 ## Is it working right now?
-No.
+Yes, 14.10.2022
 
 ## Usage
 Check out the [showcase](https://check.the.url/you-are-too-early-and-i-am-too-lazy) for an in-depth guide.
@@ -21,7 +21,7 @@ Check out the [showcase](https://check.the.url/you-are-too-early-and-i-am-too-la
 The DevTools version, less convenient and might be fixed soon.
 
 ## Is it working right now?
-Worked on main 21.09.2022(US 09/21/2022).
+Unknown. Worked on main 21.09.2022(US 09/21/2022), but it's... not really supposed to anymore?
 
 ## Usage
 Check out the [showcase](https://youtu.be/Jr_UAZQ-mqQ) for an all-in-1 guide.
