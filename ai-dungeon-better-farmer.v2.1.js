@@ -300,7 +300,7 @@
 				}
 				auxBtn.style.backgroundColor = "#43DB7C";
 				auxBtn.style.borderColor = "#30F178";
-				spx.innerText = (await easy(Query4)).data.adCountdown.currentCount + "Actions";
+				spx.innerText = (await easy(Query4)).data.adCountdown.currentCount + " Actions";
 				auxBtn.style.backgroundColor = auxBtn.ogBg;
 				auxBtn.style.borderColor = auxBtn.ogBorder;
 			};
