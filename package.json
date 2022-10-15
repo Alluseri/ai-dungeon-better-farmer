@@ -1,0 +1,14 @@
+{
+  "name": "ai-dungeon-better-farmer",
+  "version": "2.1.0",
+  "description": "Don't be a slave of ads on a service that doesn't even deserve funding.",
+  "main": "ai-dungeon-better-farmer.v2.1.js",
+  "scripts": {
+    "test": "node ai-dungeon-better-farmer.v2.1.js"
+  },
+  "author": "Alluseri",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  }
+}
