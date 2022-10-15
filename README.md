@@ -12,11 +12,7 @@ People might come here with the expected question of "why?", implying that ads w
 Please, for God's sake, don't be too greedy. It's highly unlikely the project will get outdated and abandoned in a matter of days, so, if you want to farm, do it passively. +300 actions per day at most. More will get you flagged and yeeted along with all your stories, so don't hold me responsible for this.
 
 ## Mobile Support
-Not happening.
-
-Long answer as to why: It would be really difficult to implement a fully functional front-end application that would be able to simulate a full client communication cycle(in order to avoid flags due to "randomly emitted" packets), and also I would have to reverse the way the passwords are hashed/encrypted on login(I looked into it on voyageplay login system already). Alternatively, I could have patched the .apk to remove the whole watch-ad procedure, but that would probably be illegal and I wouldn't be able to disclose the source code, which would leave it highly untrusted.
-
-Short answer as to why: I'm lazy.
+I'll look into it. Maybe it would be better to just make an alternative front-end to AI Dungeon now, but I don't think anyone'd be interested.
 
 # v2
 The userscript version, much more convenient and way more stable.
