@@ -315,7 +315,7 @@
 				return x;
 			},
 				buildElement("div", { className: auxVisuals.className }, x => style(x, auxVisuals),
-					buildElement("div", { className: auxText.className, innerText: "+10 ACTIONS" }, x => style(x, auxText))
+					buildElement("div", { className: auxText.className, innerText: "+80 ACTIONS" }, x => style(x, auxText))
 				)
 			);
 
@@ -328,7 +328,7 @@
 				return x;
 			},
 				buildElement("div", { className: auxVisuals.className }, x => style(x, auxVisuals),
-					buildElement("div", { className: auxText.className, innerText: "+10 ACTIONS [FAST]" }, x => style(x, auxText))
+					buildElement("div", { className: auxText.className, innerText: "+80 ACTIONS [FAST]" }, x => style(x, auxText))
 				)
 			);
 		}
