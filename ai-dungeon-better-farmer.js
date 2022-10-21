@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         AI Dungeon Better Farmer
 // @namespace    https://www.youtube.com/playlist?list=PLuPCd5VIscosG72QWT03BBZriNDEbryea
-// @version      2.2
+// @version      2.3
 // @description  Gets rid of the need to spend your precious time to watch ads.
 // @author       Alluseri
 // @match        https://play.aidungeon.io/*
@@ -31,16 +31,22 @@
 		const fetch = require("node-fetch");
 		const rl = require("readline").createInterface(process.stdin, process.stdout);
 		const prompt = async (q) => await new Promise((r) => rl.question(q, r));
-
-		const Login = (await prompt("Enter your login: ")).trim();
-		const Password = await prompt("Enter your password: ");
-
+		const fse = require("fs-extra");
+		
+		if (!fse.existsSync("login.txt")) {
+			console.log("ERROR: Credentials file doesn't exist.");
+			return;
+		}
+		const _x_fd = fse.readFileSync("login.txt").split("\n");
+		const Login = _x_fd[0];
+		const Password = _x_fd[1];
+		
 		console.log("For advanced users(feel free to skip all of the below):");
-		const UA = (await prompt("Enter your useragent: ")).trim() || "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.115 Safari/537.36 OPR/88.0.4412.65";
+		const UA = (await prompt("Enter your useragent: ")).trim() || "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.115 Safari/537.36";
 		const GraphQL_UA = UA.toLowerCase();
 		const FirebaseKey = "AIzaSyCnvo_XFPmAabrDkOKBRpbivp5UH8r_3mg";
-		const FirebaseCV = (await prompt("Enter your Firebase CV: ")).trim() || "Opera/JsCore/9.6.7/FirebaseCore-web";
-		const FirebaseUA = (await prompt("Enter your Firebase UA: ")).trim() || "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.115 Safari/537.36 OPR/88.0.4412.65";
+		const FirebaseCV = (await prompt("Enter your Firebase CV: ")).trim() || "Chrome/JsCore/9.6.7/FirebaseCore-web";
+		const FirebaseUA = (await prompt("Enter your Firebase UA: ")).trim() || "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.115 Safari/537.36";
 
 		const FirebaseHeaders = {
 			"origin": "https://play.aidungeon.io",
@@ -187,27 +193,27 @@
 		console.log("3. Super fast mode(unsafe)");
 		console.log("*. Exit");
 		var z = (await prompt("> ")).trim() - 0;
-		if (![1,2,3].includes(z)) { // lol i fucking hate js
+		if (![1,2,3].includes(z)) {
 			process.exit();
 			return;
 		}
-		console.log("Please add AT MOST (30 * 10) actions everyday for your own safety!!!");
-		var amount = ((await prompt("Add this many actions * 10: ")).trim() - 0) || 1;
+		console.log("Please add AT MOST (10 * 80) actions everyday for your own safety!!!");
+		var amount = ((await prompt("Add this many actions * 80: ")).trim() - 0) || 1;
 		switch (z) {
 			case 1:
 				for (var i = 1;i <= amount;i++)
-					console.log("Your current actions: " + (await runFarm(authToken, false)) +"(farmed "+i+" * 10 actions)");
+					console.log("Your current actions: " + (await runFarm(authToken, false)) +"(farmed "+i+" * 80 actions)");
 				console.log("Routine finished, you may exit now.");
 			break;
 			case 2:
 				for (var j = 1;j <= amount;j++)
-					console.log("Your current actions: " + (await runFarm(authToken, true)) +"(farmed "+j+" * 10 actions)");
+					console.log("Your current actions: " + (await runFarm(authToken, true)) +"(farmed "+j+" * 80 actions)");
 				console.log("Routine finished, you may exit in 5 seconds.");
 			break;
 			case 3:
 				for (var k = 1;k <= amount;k++) {
 					runFarm(authToken, true);
-					console.log("Farmed "+k+" * 10 actions(can't evaluate current actions)");
+					console.log("Farmed "+k+" * 80 actions(can't evaluate current actions)");
 				}
 				console.log("Routine finished, you may exit in around "+amount+" seconds.");
 			break;
