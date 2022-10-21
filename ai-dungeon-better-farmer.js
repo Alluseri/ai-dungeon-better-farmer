@@ -10,7 +10,6 @@
 // ==/UserScript==
 
 /* jshint esversion: 11 */
-
 (function() {
 	'use strict';
 	(async () => {
