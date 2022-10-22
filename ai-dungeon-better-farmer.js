@@ -37,7 +37,7 @@
 			console.log("ERROR: Credentials file doesn't exist.");
 			return;
 		}
-		const _x_fd = fse.readFileSync("login.txt").toString().split("\n");
+		const _x_fd = fse.readFileSync("login.txt").toString().split("\n").map(x=>x.trim());
 		const Login = _x_fd[0];
 		const Password = _x_fd[1];
 		
@@ -161,6 +161,10 @@
 			headers: FirebaseHeaders,
 			body: JSON.stringify({ "returnSecureToken": true, "email": Login, "password": Password })
 		});
+		if (!signInResponse.expiresIn) {
+			console.log(signInResponse);
+			throw "Please report this error or resolve it manually. Thanks!";
+		}
 		setTimeout(()=>{throw "Token has timed out. Please reopen the application.";}, signInResponse.expiresIn * 1000);
 		var idToken = signInResponse.idToken;
 		var account = (await fastJSON("https://identitytoolkit.googleapis.com/v1/accounts:lookup?key=" + FirebaseKey, {
