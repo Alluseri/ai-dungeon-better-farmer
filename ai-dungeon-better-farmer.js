@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         AI Dungeon Better Farmer
 // @namespace    https://www.youtube.com/playlist?list=PLuPCd5VIscosG72QWT03BBZriNDEbryea
-// @version      2.3
+// @version      2.4
 // @description  Gets rid of the need to spend your precious time to watch ads.
 // @author       Alluseri
 // @match        https://play.aidungeon.io/*
@@ -10,6 +10,7 @@
 // ==/UserScript==
 
 /* jshint esversion: 11 */
+
 (function() {
 	'use strict';
 	(async () => {
