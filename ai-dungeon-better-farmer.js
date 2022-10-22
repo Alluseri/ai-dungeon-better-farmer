@@ -201,23 +201,23 @@
 			process.exit();
 			return;
 		}
-		console.log("Please add AT MOST (10 * 80) actions everyday for your own safety!!!");
-		var amount = ((await prompt("Add this many actions * 80: ")).trim() - 0) || 1;
+		console.log("Please add AT MOST (10 * 10) actions everyday for your own safety!!!");
+		var amount = ((await prompt("Add this many actions * 10: ")).trim() - 0) || 1;
 		switch (z) {
 			case 1:
 				for (var i = 1;i <= amount;i++)
-					console.log("Your current actions: " + (await runFarm(authToken, false)) +"(farmed "+i+" * 80 actions)");
+					console.log("Your current actions: " + (await runFarm(authToken, false)) +"(farmed "+i+" * 10 actions)");
 				console.log("Routine finished, you may exit now.");
 			break;
 			case 2:
 				for (var j = 1;j <= amount;j++)
-					console.log("Your current actions: " + (await runFarm(authToken, true)) +"(farmed "+j+" * 80 actions)");
+					console.log("Your current actions: " + (await runFarm(authToken, true)) +"(farmed "+j+" * 10 actions)");
 				console.log("Routine finished, you may exit in 5 seconds.");
 			break;
 			case 3:
 				for (var k = 1;k <= amount;k++) {
 					runFarm(authToken, true);
-					console.log("Farmed "+k+" * 80 actions(can't evaluate current actions)");
+					console.log("Farmed "+k+" * 10 actions(can't evaluate current actions)");
 				}
 				console.log("Routine finished, you may exit in around "+amount+" seconds.");
 			break;
@@ -325,7 +325,7 @@
 				return x;
 			},
 				buildElement("div", { className: auxVisuals.className }, x => style(x, auxVisuals),
-					buildElement("div", { className: auxText.className, innerText: "+80 ACTIONS" }, x => style(x, auxText))
+					buildElement("div", { className: auxText.className, innerText: "+10 ACTIONS" }, x => style(x, auxText))
 				)
 			);
 
@@ -338,7 +338,7 @@
 				return x;
 			},
 				buildElement("div", { className: auxVisuals.className }, x => style(x, auxVisuals),
-					buildElement("div", { className: auxText.className, innerText: "+80 ACTIONS [FAST]" }, x => style(x, auxText))
+					buildElement("div", { className: auxText.className, innerText: "+10 ACTIONS [FAST]" }, x => style(x, auxText))
 				)
 			);
 		}
