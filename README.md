@@ -7,7 +7,7 @@ A new, better & safer advertisement farmer & bypass for AI Dungeon.
 Don't be too greedy. It's highly unlikely the project will get outdated and abandoned in a matter of days, so, if you want to farm, don't do it aggressively. +300 actions per day at most(+800 for the new default +80 actions). More will get you flagged, so don't hold me responsible for this.
 
 ## Is it working right now?
-Yes, 21.10.2022
+Yes, 22.10.2022
 
 ## Usage
 Check out the [showcase](https://check.the.url/you-are-too-early-and-i-am-too-lazy) for an all-in-1 in-depth guide.
@@ -25,4 +25,4 @@ Check out the [showcase](https://check.the.url/you-are-too-early-and-i-am-too-la
 ### Dorynode commands
 1. `cd /storage/emulated/0/Android/data/io.tempage.dorynode/files`
 2. `cd aidbf`
-3. `npm test`
+3. `npm test`/`node .`
