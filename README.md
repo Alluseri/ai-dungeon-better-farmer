@@ -4,7 +4,7 @@ A new, better & safer advertisement farmer & bypass for AI Dungeon.
 **If you came here from v1, please watch the new showcase instead!**
 
 ## Precautions
-Don't be too greedy. It's highly unlikely the project will get outdated and abandoned in a matter of days, so, if you want to farm, don't do it aggressively. +300 actions per day at most(+800 for the new default +80 actions). More will get you flagged, so don't hold me responsible for this.
+Don't be too greedy. It's highly unlikely the project will get outdated and abandoned in a matter of days, so, if you want to farm, don't do it aggressively. +300 actions per day at most. More will get you flagged, so don't hold me responsible for this.
 
 ## Is it working right now?
 Yes, 22.10.2022
@@ -17,7 +17,7 @@ Check out the [showcase](https://check.the.url/you-are-too-early-and-i-am-too-la
 4. Ctrl+S.
 5. Enable it if required.
 6. Open any adventure play of yours and, if you don't see the additional buttons on your hotbar, refresh the page.
-7. Click `+80 ACTIONS` or `+80 ACTIONS [FAST]`(fast mode might get the counter out of sync).
+7. Click `+10 ACTIONS` or `+10 ACTIONS [FAST]`(fast mode might get the counter out of sync).
 8. Your updated actions will be visible at the top right.
 9. To use the newly acquired actions, you'll have to refresh the page again.
 10. Enjoy!
