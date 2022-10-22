@@ -37,7 +37,7 @@
 			console.log("ERROR: Credentials file doesn't exist.");
 			return;
 		}
-		const _x_fd = fse.readFileSync("login.txt").split("\n");
+		const _x_fd = fse.readFileSync("login.txt").toString().split("\n");
 		const Login = _x_fd[0];
 		const Password = _x_fd[1];
 		
