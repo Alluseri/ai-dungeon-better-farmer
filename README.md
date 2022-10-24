@@ -1,8 +1,6 @@
 # Better ad farmer for AI Dungeon
 A new, better & safer advertisement farmer & bypass for AI Dungeon.
 
-**If you came here from v1, please watch the new showcase instead!**
-
 ## Precautions
 Don't be too greedy. It's highly unlikely the project will get outdated and abandoned in a matter of days, so, if you want to farm, don't do it aggressively. +300 actions per day at most. More will get you flagged, so don't hold me responsible for this.
 
