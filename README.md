@@ -10,7 +10,7 @@ AI Dungeon Farmer still works, so if AIDBF breaks, use that instead. You remembe
 Don't be too greedy. It's highly unlikely the project will get outdated and abandoned in a matter of days, so, if you want to farm, don't do it aggressively. +300 actions per day at most. More will get you flagged, so don't hold me responsible for this.
 
 ## Is it working right now?
-Yes, 25.10.2022
+Worked 25.10.2022; repo archived.
 
 ## Usage
 Check out the [guide](https://youtu.be/vEd1EaMEhl0) for **Android users** if you are one.
