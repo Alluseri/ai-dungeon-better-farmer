@@ -1,6 +1,11 @@
 # Better ad farmer for AI Dungeon
 A new, better & safer advertisement farmer & bypass for AI Dungeon.
 
+## Important
+AIDBF v2.4x is the last version of AIDBF.
+
+AI Dungeon Farmer still works, so if AIDBF breaks, use that instead. You remember how, right?
+
 ## Precautions
 Don't be too greedy. It's highly unlikely the project will get outdated and abandoned in a matter of days, so, if you want to farm, don't do it aggressively. +300 actions per day at most. More will get you flagged, so don't hold me responsible for this.
 
