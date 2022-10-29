@@ -1,3 +1,5 @@
+<img src="https://komarev.com/ghpvc/?username=AIDBF&label=Funny and useless counter&color=0099ff&style=flat" alt="AIDBF" />
+
 # Better ad farmer for AI Dungeon
 A new, better & safer advertisement farmer & bypass for AI Dungeon.
 
