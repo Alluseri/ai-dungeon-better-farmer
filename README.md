@@ -8,11 +8,10 @@ AIDBF v2.4x is the last version of AIDBF. Development stopped because it's alrea
 
 [AI Dungeon Farmer](https://github.com/Alluseri/ai-dungeon-farmer) still works, so if AIDBF breaks, use that instead. You remember how, right?
 
-I'll keep increasing the farmed actions by 1000 every 24 hours this doesn't get banned and update the link: https://www.reddit.com/r/AIDungeon/comments/ygjppv/can_we_get_this_acc_banned_in_under_24_hours/
-(Spoiler: I will forget by tomorrow)
+[We couldn't get it banned in 24 hours :(](https://www.reddit.com/r/AIDungeon/comments/ygjppv/can_we_get_this_acc_banned_in_under_24_hours/)
 
 ## Is it working right now?
-Works 29.10.2022.
+Works 30.10.2022.
 
 ## Usage
 Check out the [guide](https://youtu.be/vEd1EaMEhl0) for **Android users** if you are one.
