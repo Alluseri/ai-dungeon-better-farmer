@@ -1,7 +1,9 @@
-<img src="https://komarev.com/ghpvc/?username=AIDBF&label=Funny and useless counter&color=0099ff&style=flat" alt="AIDBF" />
+<img src="https://komarev.com/ghpvc/?username=AIDBF&label=Actual telemetry&color=0099ff&style=flat" alt="AIDBF" />
 
 # Better ad farmer for AI Dungeon
 A new, better & safer advertisement farmer & bypass for AI Dungeon.
+
+Yes, I am [u/Forever1April](https://www.reddit.com/user/Forever1April) and I still advertise this. I think I did a good job anyway.
 
 ## Important
 AIDBF v2.4x is the last version of AIDBF. Development stopped because it's already perfect and who cares anyway?
@@ -11,10 +13,10 @@ AIDBF v2.4x is the last version of AIDBF. Development stopped because it's alrea
 [We couldn't get it banned in 24 hours :(](https://www.reddit.com/r/AIDungeon/comments/ygjppv/can_we_get_this_acc_banned_in_under_24_hours/)
 
 ## Is it working right now?
-Works 30.10.2022.
+I don't know. Repo archived. Probably does. You will not get banned unless you farm like over 5k actions overnight.
 
 ## Usage
-Check out the [guide](https://youtu.be/vEd1EaMEhl0) for **Android users** if you are one.
+Android users will need to use dorynode or termux.
 
 For browser users:
 1. Install TamperMonkey(GreaseMonkey NOT TESTED!).
