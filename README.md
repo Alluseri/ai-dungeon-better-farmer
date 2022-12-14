@@ -6,14 +6,13 @@ A new, better & safer advertisement farmer & bypass for AI Dungeon.
 Yes, I am [u/Forever1April](https://www.reddit.com/user/Forever1April) and I still advertise this. I think I did a good job anyway.
 
 ## Important
+There are no ads in AI Dungeon anymore. It's a win, guys.
+
 AIDBF v2.4x is the last version of AIDBF. Development stopped because it's already perfect and who cares anyway?
 
 [AI Dungeon Farmer](https://github.com/Alluseri/ai-dungeon-farmer) still works, so if AIDBF breaks, use that instead. You remember how, right?
 
 [We couldn't get it banned in 24 hours :(](https://www.reddit.com/r/AIDungeon/comments/ygjppv/can_we_get_this_acc_banned_in_under_24_hours/)
-
-## Is it working right now?
-I don't know. Repo archived. Probably does. You will not get banned unless you farm like over 5k actions overnight.
 
 ## Usage
 Android users will need to use dorynode or termux.
